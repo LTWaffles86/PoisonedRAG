@@ -1,5 +1,7 @@
 # PoisonedRAG
 
+> **Course project (ECE 424):** to reproduce our results, see [BASELINE.md](BASELINE.md) (`bash baseline.sh`). Protocol and logs: [experiments/EXPERIMENT_PROTOCOL.md](experiments/EXPERIMENT_PROTOCOL.md). The authors' original README follows.
+
 Official repo of [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25) paper: [PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2402.07867).
 
 The first knowledge database corruption attack against Retrievals-Augmented Generation (RAG) system.

@@ -1,0 +1,10 @@
+Sanity check: gte-small harness encoder vs SentenceTransformer.encode (nq, 30 targets)
+torch 2.14.1+cu126, GPU NVIDIA GeForce GTX 1660, model dtype torch.float32
+
+texts                 n max_abs_diff max_|norm-1|
+questions            30     2.98e-08     1.19e-07
+attack texts        150     1.06e-07     1.19e-07
+ground-truth docs    35     2.98e-08     1.19e-07
+
+max |ours - reference| = 1.06e-07, max |norm - 1| = 1.19e-07 (tolerance 1e-04)
+RESULT: PASS

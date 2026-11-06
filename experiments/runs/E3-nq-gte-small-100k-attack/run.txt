@@ -1,0 +1,58 @@
+Args: {'dataset': 'nq', 'split': 'test', 'retriever': 'gte-small', 'score_function': 'cos_sim', 'top_k': 5, 'adv_per_query': 5, 'M': 10, 'repeat_times': 3, 'seed': 12, 'attack': 'LM_targeted', 'corpus_size': '100000', 'batch_size': 64, 'run_name': 'E3-nq-gte-small-100k-attack'}
+Encoding 100000 documents (this is the slow step; cached afterwards)
+  [corpus] batch 1/1563
+  [corpus] batch 201/1563
+  [corpus] batch 401/1563
+  [corpus] batch 601/1563
+  [corpus] batch 801/1563
+  [corpus] batch 1001/1563
+  [corpus] batch 1201/1563
+  [corpus] batch 1401/1563
+  [corpus] batch 1563/1563
+Encoded in 358s, saved to cache/emb/nq-gte-small-100000-seed12.pt
+Knowledge base: 100000 clean documents (100000)
+######## Iter 1/3: targets 0-9 ########
+  test1: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test11: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test16: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test19: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test20: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test21: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test31: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test47: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test50: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test53: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+######## Iter 2/3: targets 10-19 ########
+  test57: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test58: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test60: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test62: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test64: own adv in top-5 = 4, other adv = 0, gt in top-k = True, gt clean rank = 1
+  test70: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test75: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test77: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test79: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test82: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+######## Iter 3/3: targets 20-29 ########
+  test87: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test88: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test90: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test94: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test106: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test107: own adv in top-5 = 4, other adv = 0, gt in top-k = True, gt clean rank = 1
+  test110: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test113: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test120: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test127: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+
+======== Summary ========
+n_targets: 30
+poison_retrieval_hit_rate: 1.0
+precision: 0.9867
+recall: 0.9867
+f1: 0.9867
+f1_per_iter: [1.0, 0.9800000000000001, 0.9800000000000001]
+clean_hit_rate: 0.0667
+mean_first_adv_rank: 1.0333
+adv_other_in_topk_total: 0
+Outputs: experiments/runs/E3-nq-gte-small-100k-attack/{trace.jsonl,summary.json,run.txt}

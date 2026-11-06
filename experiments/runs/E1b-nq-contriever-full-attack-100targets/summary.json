@@ -1,0 +1,50 @@
+{
+  "run_name": "E1b-nq-contriever-full-attack-100targets",
+  "args": {
+    "dataset": "nq",
+    "split": "test",
+    "retriever": "contriever",
+    "score_function": "dot",
+    "top_k": 5,
+    "adv_per_query": 5,
+    "M": 10,
+    "repeat_times": 10,
+    "seed": 12,
+    "attack": "LM_targeted",
+    "corpus_size": "full",
+    "batch_size": 64,
+    "run_name": "E1b-nq-contriever-full-attack-100targets"
+  },
+  "metrics": {
+    "n_targets": 100,
+    "poison_retrieval_hit_rate": 1.0,
+    "precision": 0.9580000000000001,
+    "recall": 0.9580000000000001,
+    "f1": 0.9580000000000001,
+    "f1_per_iter": [
+      0.96,
+      0.9400000000000001,
+      0.96,
+      0.9600000000000002,
+      0.9400000000000002,
+      1.0,
+      0.9,
+      0.9200000000000002,
+      1.0,
+      1.0
+    ],
+    "clean_hit_rate": 0.03,
+    "mean_first_adv_rank": 1.02,
+    "adv_other_in_topk_total": 0
+  },
+  "knowledge_base_size": 2681468,
+  "wall_time_s": 6.5,
+  "timestamp": "2026-11-05 21:46:58",
+  "git_commit": "f660d72-dirty",
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA GeForce GTX 1660"
+  }
+}

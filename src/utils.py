@@ -14,13 +14,15 @@ from sentence_transformers import SentenceTransformer
 model_code_to_qmodel_name = {
     "contriever": "facebook/contriever",
     "contriever-msmarco": "facebook/contriever-msmarco",
-    "ance": "sentence-transformers/msmarco-roberta-base-ance-firstp"
+    "ance": "sentence-transformers/msmarco-roberta-base-ance-firstp",
+    "gte-small": "thenlper/gte-small"
 }
 
 model_code_to_cmodel_name = {
     "contriever": "facebook/contriever",
     "contriever-msmarco": "facebook/contriever-msmarco",
-    "ance": "sentence-transformers/msmarco-roberta-base-ance-firstp"
+    "ance": "sentence-transformers/msmarco-roberta-base-ance-firstp",
+    "gte-small": "thenlper/gte-small"
 }
 
 def contriever_get_emb(model, input):
@@ -41,8 +43,9 @@ def load_models(model_code):
         c_model = model
         tokenizer = AutoTokenizer.from_pretrained(model_code_to_qmodel_name[model_code])
         get_emb = contriever_get_emb
-    elif 'ance' in model_code:
-        model = SentenceTransformer(model_code_to_qmodel_name[model_code])
+    elif 'ance' in model_code or 'gte' in model_code:
+        # transformers 5 loads the config's dtype (gte-small ships fp16); fp32 is exact and faster on GTX 16xx
+        model = SentenceTransformer(model_code_to_qmodel_name[model_code]).float()
         assert model_code_to_cmodel_name[model_code] == model_code_to_qmodel_name[model_code]
         c_model = model
         tokenizer = model.tokenizer
