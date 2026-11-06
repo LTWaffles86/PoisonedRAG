@@ -44,7 +44,7 @@ The script stops at the first error and ends by printing one line per run.
 | E2 100k docs | `.venv/bin/python retriever_mvp.py --corpus_size 100000 --run_name E2-nq-contriever-100k-attack` | `f1: 1.0` (about 30 min the first time) | `experiments/runs/E2-nq-contriever-100k-attack/` |
 | E0b gte-small check | `.venv/bin/python sanity_check_gte.py` | `RESULT: PASS` (max diff about 1e-07) | `experiments/sanity/gte_small_encode_check.txt` |
 | E3 gte-small 100k | `.venv/bin/python retriever_mvp.py --retriever gte-small --score_function cos_sim --corpus_size 100000 --run_name E3-nq-gte-small-100k-attack` | `f1: 0.9867` (about 6 min the first time) | `experiments/runs/E3-nq-gte-small-100k-attack/` |
-| E3 gte-small full NQ | same with `--corpus_size 2681468 --run_name E3-nq-gte-small-full-attack` | see protocol (about 2.5 h the first time) | `experiments/runs/E3-nq-gte-small-full-attack/` |
+| E3 gte-small full NQ | same with `--corpus_size 2681468 --run_name E3-nq-gte-small-full-attack` | `f1: 0.9333` (about 2 h 40 min the first time) | `experiments/runs/E3-nq-gte-small-full-attack/` |
 
 Each run folder has `summary.json` (metrics, arguments, versions), `trace.jsonl` (the top-5 for every
 question, with each entry labelled clean, own attack text, or another target's attack text) and `run.txt` (console log).
@@ -60,6 +60,8 @@ Results are deterministic, so you should get the same numbers.
 | E2 attack | 30 | 100,000 docs | 1.000 | - (our extension) |
 | E3 attack, gte-small | 30 | 100,000 docs | 0.987 | - (our extension) |
 | E3 clean, gte-small | 30 | 100,000 docs | 0.000 | - |
+| E3 attack, gte-small | 30 | full NQ | 0.933 | - (paper: Contriever 0.96) |
+| E3 clean, gte-small | 30 | full NQ | 0.000 | - |
 
 ## 6. Where to look
 - **Sanity check and its explanation:** `experiments/EXPERIMENT_PROTOCOL.md`, section "Sanity check (E0)"; raw table in `experiments/sanity/score_reproduction.txt`.

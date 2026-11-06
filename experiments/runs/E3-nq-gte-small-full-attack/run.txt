@@ -1,0 +1,260 @@
+Args: {'dataset': 'nq', 'split': 'test', 'retriever': 'gte-small', 'score_function': 'cos_sim', 'top_k': 5, 'adv_per_query': 5, 'M': 10, 'repeat_times': 3, 'seed': 12, 'attack': 'LM_targeted', 'corpus_size': '2681468', 'batch_size': 64, 'run_name': 'E3-nq-gte-small-full-attack'}
+Encoding 2681468 documents (this is the slow step; cached afterwards)
+  [corpus] batch 1/41898
+  [corpus] batch 201/41898
+  [corpus] batch 401/41898
+  [corpus] batch 601/41898
+  [corpus] batch 801/41898
+  [corpus] batch 1001/41898
+  [corpus] batch 1201/41898
+  [corpus] batch 1401/41898
+  [corpus] batch 1601/41898
+  [corpus] batch 1801/41898
+  [corpus] batch 2001/41898
+  [corpus] batch 2201/41898
+  [corpus] batch 2401/41898
+  [corpus] batch 2601/41898
+  [corpus] batch 2801/41898
+  [corpus] batch 3001/41898
+  [corpus] batch 3201/41898
+  [corpus] batch 3401/41898
+  [corpus] batch 3601/41898
+  [corpus] batch 3801/41898
+  [corpus] batch 4001/41898
+  [corpus] batch 4201/41898
+  [corpus] batch 4401/41898
+  [corpus] batch 4601/41898
+  [corpus] batch 4801/41898
+  [corpus] batch 5001/41898
+  [corpus] batch 5201/41898
+  [corpus] batch 5401/41898
+  [corpus] batch 5601/41898
+  [corpus] batch 5801/41898
+  [corpus] batch 6001/41898
+  [corpus] batch 6201/41898
+  [corpus] batch 6401/41898
+  [corpus] batch 6601/41898
+  [corpus] batch 6801/41898
+  [corpus] batch 7001/41898
+  [corpus] batch 7201/41898
+  [corpus] batch 7401/41898
+  [corpus] batch 7601/41898
+  [corpus] batch 7801/41898
+  [corpus] batch 8001/41898
+  [corpus] batch 8201/41898
+  [corpus] batch 8401/41898
+  [corpus] batch 8601/41898
+  [corpus] batch 8801/41898
+  [corpus] batch 9001/41898
+  [corpus] batch 9201/41898
+  [corpus] batch 9401/41898
+  [corpus] batch 9601/41898
+  [corpus] batch 9801/41898
+  [corpus] batch 10001/41898
+  [corpus] batch 10201/41898
+  [corpus] batch 10401/41898
+  [corpus] batch 10601/41898
+  [corpus] batch 10801/41898
+  [corpus] batch 11001/41898
+  [corpus] batch 11201/41898
+  [corpus] batch 11401/41898
+  [corpus] batch 11601/41898
+  [corpus] batch 11801/41898
+  [corpus] batch 12001/41898
+  [corpus] batch 12201/41898
+  [corpus] batch 12401/41898
+  [corpus] batch 12601/41898
+  [corpus] batch 12801/41898
+  [corpus] batch 13001/41898
+  [corpus] batch 13201/41898
+  [corpus] batch 13401/41898
+  [corpus] batch 13601/41898
+  [corpus] batch 13801/41898
+  [corpus] batch 14001/41898
+  [corpus] batch 14201/41898
+  [corpus] batch 14401/41898
+  [corpus] batch 14601/41898
+  [corpus] batch 14801/41898
+  [corpus] batch 15001/41898
+  [corpus] batch 15201/41898
+  [corpus] batch 15401/41898
+  [corpus] batch 15601/41898
+  [corpus] batch 15801/41898
+  [corpus] batch 16001/41898
+  [corpus] batch 16201/41898
+  [corpus] batch 16401/41898
+  [corpus] batch 16601/41898
+  [corpus] batch 16801/41898
+  [corpus] batch 17001/41898
+  [corpus] batch 17201/41898
+  [corpus] batch 17401/41898
+  [corpus] batch 17601/41898
+  [corpus] batch 17801/41898
+  [corpus] batch 18001/41898
+  [corpus] batch 18201/41898
+  [corpus] batch 18401/41898
+  [corpus] batch 18601/41898
+  [corpus] batch 18801/41898
+  [corpus] batch 19001/41898
+  [corpus] batch 19201/41898
+  [corpus] batch 19401/41898
+  [corpus] batch 19601/41898
+  [corpus] batch 19801/41898
+  [corpus] batch 20001/41898
+  [corpus] batch 20201/41898
+  [corpus] batch 20401/41898
+  [corpus] batch 20601/41898
+  [corpus] batch 20801/41898
+  [corpus] batch 21001/41898
+  [corpus] batch 21201/41898
+  [corpus] batch 21401/41898
+  [corpus] batch 21601/41898
+  [corpus] batch 21801/41898
+  [corpus] batch 22001/41898
+  [corpus] batch 22201/41898
+  [corpus] batch 22401/41898
+  [corpus] batch 22601/41898
+  [corpus] batch 22801/41898
+  [corpus] batch 23001/41898
+  [corpus] batch 23201/41898
+  [corpus] batch 23401/41898
+  [corpus] batch 23601/41898
+  [corpus] batch 23801/41898
+  [corpus] batch 24001/41898
+  [corpus] batch 24201/41898
+  [corpus] batch 24401/41898
+  [corpus] batch 24601/41898
+  [corpus] batch 24801/41898
+  [corpus] batch 25001/41898
+  [corpus] batch 25201/41898
+  [corpus] batch 25401/41898
+  [corpus] batch 25601/41898
+  [corpus] batch 25801/41898
+  [corpus] batch 26001/41898
+  [corpus] batch 26201/41898
+  [corpus] batch 26401/41898
+  [corpus] batch 26601/41898
+  [corpus] batch 26801/41898
+  [corpus] batch 27001/41898
+  [corpus] batch 27201/41898
+  [corpus] batch 27401/41898
+  [corpus] batch 27601/41898
+  [corpus] batch 27801/41898
+  [corpus] batch 28001/41898
+  [corpus] batch 28201/41898
+  [corpus] batch 28401/41898
+  [corpus] batch 28601/41898
+  [corpus] batch 28801/41898
+  [corpus] batch 29001/41898
+  [corpus] batch 29201/41898
+  [corpus] batch 29401/41898
+  [corpus] batch 29601/41898
+  [corpus] batch 29801/41898
+  [corpus] batch 30001/41898
+  [corpus] batch 30201/41898
+  [corpus] batch 30401/41898
+  [corpus] batch 30601/41898
+  [corpus] batch 30801/41898
+  [corpus] batch 31001/41898
+  [corpus] batch 31201/41898
+  [corpus] batch 31401/41898
+  [corpus] batch 31601/41898
+  [corpus] batch 31801/41898
+  [corpus] batch 32001/41898
+  [corpus] batch 32201/41898
+  [corpus] batch 32401/41898
+  [corpus] batch 32601/41898
+  [corpus] batch 32801/41898
+  [corpus] batch 33001/41898
+  [corpus] batch 33201/41898
+  [corpus] batch 33401/41898
+  [corpus] batch 33601/41898
+  [corpus] batch 33801/41898
+  [corpus] batch 34001/41898
+  [corpus] batch 34201/41898
+  [corpus] batch 34401/41898
+  [corpus] batch 34601/41898
+  [corpus] batch 34801/41898
+  [corpus] batch 35001/41898
+  [corpus] batch 35201/41898
+  [corpus] batch 35401/41898
+  [corpus] batch 35601/41898
+  [corpus] batch 35801/41898
+  [corpus] batch 36001/41898
+  [corpus] batch 36201/41898
+  [corpus] batch 36401/41898
+  [corpus] batch 36601/41898
+  [corpus] batch 36801/41898
+  [corpus] batch 37001/41898
+  [corpus] batch 37201/41898
+  [corpus] batch 37401/41898
+  [corpus] batch 37601/41898
+  [corpus] batch 37801/41898
+  [corpus] batch 38001/41898
+  [corpus] batch 38201/41898
+  [corpus] batch 38401/41898
+  [corpus] batch 38601/41898
+  [corpus] batch 38801/41898
+  [corpus] batch 39001/41898
+  [corpus] batch 39201/41898
+  [corpus] batch 39401/41898
+  [corpus] batch 39601/41898
+  [corpus] batch 39801/41898
+  [corpus] batch 40001/41898
+  [corpus] batch 40201/41898
+  [corpus] batch 40401/41898
+  [corpus] batch 40601/41898
+  [corpus] batch 40801/41898
+  [corpus] batch 41001/41898
+  [corpus] batch 41201/41898
+  [corpus] batch 41401/41898
+  [corpus] batch 41601/41898
+  [corpus] batch 41801/41898
+  [corpus] batch 41898/41898
+Encoded in 9621s, saved to cache/emb/nq-gte-small-2681468-seed12.pt
+Knowledge base: 2681468 clean documents (2681468)
+######## Iter 1/3: targets 0-9 ########
+  test1: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test11: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 4
+  test16: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 13
+  test19: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test20: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test21: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 15
+  test31: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test47: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test50: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test53: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+######## Iter 2/3: targets 10-19 ########
+  test57: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test58: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test60: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 4
+  test62: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 6
+  test64: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test70: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test75: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 4
+  test77: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 53
+  test79: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+  test82: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+######## Iter 3/3: targets 20-29 ########
+  test87: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 5
+  test88: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 3
+  test90: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 17
+  test94: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 3
+  test106: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = 10
+  test107: own adv in top-5 = 1, other adv = 0, gt in top-k = True, gt clean rank = 2
+  test110: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 1
+  test113: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 8
+  test120: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 5
+  test127: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 3
+
+======== Summary ========
+n_targets: 30
+poison_retrieval_hit_rate: 1.0
+precision: 0.9333
+recall: 0.9333
+f1: 0.9333
+f1_per_iter: [0.9800000000000001, 0.9600000000000002, 0.86]
+clean_hit_rate: 0.0333
+mean_first_adv_rank: 1.1
+adv_other_in_topk_total: 0
+Outputs: experiments/runs/E3-nq-gte-small-full-attack/{trace.jsonl,summary.json,run.txt}

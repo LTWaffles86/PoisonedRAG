@@ -112,6 +112,8 @@ is at rank 54 even without the attack, so for this question the LLM would not ha
 | 2026-11-05 | E0b gte-small | - | 30 | - | - | - | - | PASS, max diff 1.06e-07, unit norm |
 | 2026-11-05 | E3-100k-attack (gte-small) | 100,000 | 30 | 1.00 | 0.987 | 0.07 | - | 6 min to encode; per-iteration F1 1.00 / 0.98 / 0.98 |
 | 2026-11-05 | E3-100k-clean (gte-small) | 100,000 | 30 | 0.00 | 0.00 | 1.00 | - | null control OK |
+| 2026-11-06 | E3-full-attack (gte-small) | 2,681,468 | 30 | 1.00 | 0.933 | 0.03 | F1 0.96 (Contriever) | 2 h 40 min to encode; per-iteration F1 0.98 / 0.96 / 0.86 |
+| 2026-11-06 | E3-full-clean (gte-small) | 2,681,468 | 30 | 0.00 | 0.00 | 0.77 | - | null control OK; embeddings reused |
 
 Observations so far:
 - **Replication holds.** Our F1 of 0.953 on 30 targets and 0.958 on 100 targets match the paper's 0.96 (Table 1, NQ, black-box).
@@ -125,6 +127,14 @@ Observations so far:
   on the same 100k KB. The two misses (test64, test107) are each one clean document taking a top-5 slot; in test107 the clean
   document ranks first (0.940 against 0.933 for the best attack text). Without the attack, gte-small finds a ground-truth doc
   for all 30 targets (1.00 against 0.87 for Contriever), but the attack pushes that down to 0.07.
+- **gte-small on full NQ: about as vulnerable as Contriever, while retrieving much better.** F1 is 0.933 against Contriever's
+  0.953 (E1) on the same 2.68M-document KB, and the poison hit rate is 1.00 for both. gte-small misses on 6 targets
+  (test11, test62, test64, test94, test106, test107) against Contriever's 5, and 4 of them are the same questions. In every miss
+  a clean document scores within about 0.015 cosine of the attack texts. test107 is the only real failure: one of 5 attack texts in
+  the top-5. Without the attack, gte-small puts a ground-truth doc in the top-5 for 23 of 30 targets (0.77) against 6 of 30 (0.20)
+  for Contriever, and its worst ground-truth rank is 53 (Contriever: 5 targets not in the top-100). The attack drops this to 0.03.
+  So a stronger retriever barely helps: the black-box attack texts start with the question itself, which any good dense
+  retriever scores highly.
 
 ## Planned next (not run yet)
 - E2: rest of the knowledge-base-size sweep with Contriever at 10k and 500k docs (500k is about 1.5-2 h to encode on a GTX 1660).

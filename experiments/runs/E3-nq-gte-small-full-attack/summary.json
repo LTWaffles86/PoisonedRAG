@@ -1,0 +1,43 @@
+{
+  "run_name": "E3-nq-gte-small-full-attack",
+  "args": {
+    "dataset": "nq",
+    "split": "test",
+    "retriever": "gte-small",
+    "score_function": "cos_sim",
+    "top_k": 5,
+    "adv_per_query": 5,
+    "M": 10,
+    "repeat_times": 3,
+    "seed": 12,
+    "attack": "LM_targeted",
+    "corpus_size": "2681468",
+    "batch_size": 64,
+    "run_name": "E3-nq-gte-small-full-attack"
+  },
+  "metrics": {
+    "n_targets": 30,
+    "poison_retrieval_hit_rate": 1.0,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1": 0.9333333333333335,
+    "f1_per_iter": [
+      0.9800000000000001,
+      0.9600000000000002,
+      0.86
+    ],
+    "clean_hit_rate": 0.03333333333333333,
+    "mean_first_adv_rank": 1.1,
+    "adv_other_in_topk_total": 0
+  },
+  "knowledge_base_size": 2681468,
+  "wall_time_s": 9691.6,
+  "timestamp": "2026-11-06 00:49:16",
+  "git_commit": "d874506-dirty",
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA GeForce GTX 1660"
+  }
+}
