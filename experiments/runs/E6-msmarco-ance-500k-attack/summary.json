@@ -1,0 +1,43 @@
+{
+  "run_name": "E6-msmarco-ance-500k-attack",
+  "args": {
+    "dataset": "msmarco",
+    "split": "train",
+    "retriever": "ance",
+    "score_function": "dot",
+    "top_k": 5,
+    "adv_per_query": 5,
+    "M": 10,
+    "repeat_times": 3,
+    "seed": 12,
+    "attack": "LM_targeted",
+    "corpus_size": "500000",
+    "batch_size": 64,
+    "run_name": "E6-msmarco-ance-500k-attack"
+  },
+  "metrics": {
+    "n_targets": 30,
+    "poison_retrieval_hit_rate": 1.0,
+    "precision": 0.9599999999999999,
+    "recall": 0.9599999999999999,
+    "f1": 0.9600000000000002,
+    "f1_per_iter": [
+      0.9000000000000001,
+      0.9800000000000001,
+      1.0
+    ],
+    "clean_hit_rate": 0.2,
+    "mean_first_adv_rank": 1.0666666666666667,
+    "adv_other_in_topk_total": 0
+  },
+  "knowledge_base_size": 500000,
+  "wall_time_s": 5770.1,
+  "timestamp": "2026-11-23 08:01:53",
+  "git_commit": "5733475-dirty",
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA GeForce GTX 1660"
+  }
+}

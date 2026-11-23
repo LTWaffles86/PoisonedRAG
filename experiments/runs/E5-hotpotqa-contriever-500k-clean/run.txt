@@ -1,0 +1,48 @@
+Args: {'dataset': 'hotpotqa', 'split': 'test', 'retriever': 'contriever', 'score_function': 'dot', 'top_k': 5, 'adv_per_query': 5, 'M': 10, 'repeat_times': 3, 'seed': 12, 'attack': 'none', 'corpus_size': '500000', 'batch_size': 64, 'run_name': 'E5-hotpotqa-contriever-500k-clean'}
+Loading cached corpus embeddings from cache/emb/hotpotqa-contriever-500000-seed12.pt
+Knowledge base: 500000 clean documents (500000)
+######## Iter 1/3: targets 0-9 ########
+  5adbf0a255429947ff17385a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a8cb288554299585d9e3726: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 13
+  5ab56e32554299637185c594: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab29c24554299449642c932: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a8133725542995ce29dcbdb: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae6050f55429929b0807a5e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae2070a5542994d89d5b313: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 17
+  5ae22b8d554299234fd0440f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a722b8655429971e9dc9329: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5adf37a95542995ec70e8f97: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+######## Iter 2/3: targets 10-19 ########
+  5abd259d55429924427fcf1a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae4a3265542995ad6573de5: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae0361155429925eb1afc2c: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5abc0a5d5542993f40c73c64: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7cc50e554299452d57ba3e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 3
+  5abf63f15542997ec76fd3ea: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a80721b554299485f5985ef: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ab51dae5542991779162d82: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7a0e1e5542990783324e1a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a8e068b5542995085b37384: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 4
+######## Iter 3/3: targets 20-29 ########
+  5a77724455429972597f153e: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 50
+  5a7320565542991f9a20c61d: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7be2595542997c3ec972ac: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 9
+  5a8f4c8d554299458435d5a3: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a80840f554299485f59863b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae7ba7a5542993210983f12: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 102
+  5aba7cfe554299232ef4a2fd: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae5aba0554299546bf82f17: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae7e1fc55429952e35ea9cc: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae37c765542992f92d822d4: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+
+======== Summary ========
+n_targets: 30
+poison_retrieval_hit_rate: 0.0
+precision: 0.0
+recall: 0.0
+f1: 0.0
+f1_per_iter: [0.0, 0.0, 0.0]
+clean_hit_rate: 0.8333
+mean_first_adv_rank: None
+adv_other_in_topk_total: 0
+Outputs: experiments/runs/E5-hotpotqa-contriever-500k-clean/{trace.jsonl,summary.json,run.txt}

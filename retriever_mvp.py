@@ -23,6 +23,7 @@ from src.utils import load_json, load_models, setup_seeds
 DATA_DIR = "datasets"
 RUNS_DIR = os.path.join("experiments", "runs")
 EMB_CACHE_DIR = os.path.join("cache", "emb")
+FULL_CORPUS_SIZE = {"nq": 2681468, "hotpotqa": 5233329, "msmarco": 8841823}  # paper Table 14
 
 
 def parse_args(argv=None):
@@ -132,7 +133,7 @@ class CachedFullCorpus:
         needed = {d for t in targets for d, _ in self.ranked[t["id"]][:args.top_k]}
         needed |= {d for t in targets for d in qrels.get(t["id"], ())}
         self.corpus = load_corpus(args.dataset, needed)
-        self.size = 2681468 if args.dataset == "nq" else None
+        self.size = FULL_CORPUS_SIZE.get(args.dataset)
         self.top_k = args.top_k
 
     def topk(self, qid, q_emb):
@@ -303,7 +304,7 @@ def run(args):
                 "n_adv_own_in_topk": n_own, "n_adv_other_in_topk": n_other,
                 "first_adv_rank": first_adv,
                 "gt_in_topk": any(c["is_gt"] for c in top),
-                "top_k": [{**c, "text": c["text"][:300]} for c in top],
+                "top_k": top,  # full texts, so the LLM stage can read its contexts from here
             }
             trace_f.write(json.dumps(rec) + "\n")
             per_query.append(rec)

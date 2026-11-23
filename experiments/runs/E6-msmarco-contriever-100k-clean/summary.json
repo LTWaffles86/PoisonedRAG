@@ -1,0 +1,43 @@
+{
+  "run_name": "E6-msmarco-contriever-100k-clean",
+  "args": {
+    "dataset": "msmarco",
+    "split": "train",
+    "retriever": "contriever",
+    "score_function": "dot",
+    "top_k": 5,
+    "adv_per_query": 5,
+    "M": 10,
+    "repeat_times": 3,
+    "seed": 12,
+    "attack": "none",
+    "corpus_size": "100000",
+    "batch_size": 64,
+    "run_name": "E6-msmarco-contriever-100k-clean"
+  },
+  "metrics": {
+    "n_targets": 30,
+    "poison_retrieval_hit_rate": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "f1_per_iter": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "clean_hit_rate": 0.8666666666666667,
+    "mean_first_adv_rank": null,
+    "adv_other_in_topk_total": 0
+  },
+  "knowledge_base_size": 100000,
+  "wall_time_s": 17.4,
+  "timestamp": "2026-11-23 04:05:44",
+  "git_commit": "5733475-dirty",
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA GeForce GTX 1660"
+  }
+}

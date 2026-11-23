@@ -1,0 +1,124 @@
+Args: {'dataset': 'msmarco', 'split': 'train', 'retriever': 'contriever', 'score_function': 'dot', 'top_k': 5, 'adv_per_query': 5, 'M': 10, 'repeat_times': 10, 'seed': 12, 'attack': 'LM_targeted', 'corpus_size': 'full', 'batch_size': 64, 'run_name': 'E6-msmarco-contriever-full-attack-100targets'}
+Knowledge base: 8841823 clean documents (full)
+######## Iter 1/10: targets 0-9 ########
+  1163399: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 80
+  192017: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164044: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 36
+  708956: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 11
+  276042: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 72
+  602483: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 9
+  608977: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  578308: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  13876: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  603030: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 40
+######## Iter 2/10: targets 10-19 ########
+  400596: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  495447: own adv in top-5 = 2, other adv = 0, gt in top-k = False, gt clean rank = 27
+  518180: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  608955: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 20
+  1163605: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 9
+  422717: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  663986: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164096: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 11
+  1164420: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  75056: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+######## Iter 3/10: targets 20-29 ########
+  77753: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 32
+  664611: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164150: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 18
+  464601: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 77
+  145522: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 12
+  1164098: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 3
+  429677: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 4
+  1164072: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  613542: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 8
+  1164223: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 6
+######## Iter 4/10: targets 30-39 ########
+  403613: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  603231: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 20
+  578643: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  604961: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  614007: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 66
+  577564: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 47
+  412652: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  614188: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 80
+  1163719: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 6
+  604839: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+######## Iter 5/10: targets 40-49 ########
+  414754: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  300369: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 9
+  605134: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 3
+  577825: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 14
+  1163769: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 28
+  1163770: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 12
+  1163698: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 5
+  1163949: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 71
+  410490: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 24
+  1163825: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 2
+######## Iter 6/10: targets 50-59 ########
+  431733: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 30
+  603045: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 9
+  1163600: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 4
+  1163993: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 11
+  611862: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 43
+  500489: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = 23
+  333411: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164733: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  230427: own adv in top-5 = 1, other adv = 0, gt in top-k = False, gt clean rank = 62
+  28407: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+######## Iter 7/10: targets 60-69 ########
+  1163803: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  289486: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  10997: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = 7
+  1163402: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  551079: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  415330: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 35
+  612163: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  599225: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 35
+  1183713: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 43
+  1164102: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 2
+######## Iter 8/10: targets 70-79 ########
+  1164039: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 3
+  408930: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  1163536: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 12
+  598745: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  167649: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  406634: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  416509: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  1163611: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 13
+  65656: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  437838: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = 10
+######## Iter 9/10: targets 80-89 ########
+  664584: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 52
+  1163425: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  156641: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164172: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 36
+  592724: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  412992: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 4
+  406880: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  540774: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  578174: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  420791: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = 38
+######## Iter 10/10: targets 90-99 ########
+  417354: own adv in top-5 = 3, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164402: own adv in top-5 = 4, other adv = 0, gt in top-k = True, gt clean rank = 1
+  1163411: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  1164451: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 89
+  1164558: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = 52
+  413229: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+  416394: own adv in top-5 = 4, other adv = 0, gt in top-k = True, gt clean rank = 1
+  1163705: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = 20
+  283876: own adv in top-5 = 5, other adv = 0, gt in top-k = False, gt clean rank = None
+  423744: own adv in top-5 = 4, other adv = 0, gt in top-k = False, gt clean rank = None
+
+======== Summary ========
+n_targets: 100
+poison_retrieval_hit_rate: 1.0
+precision: 0.894
+recall: 0.894
+f1: 0.894
+f1_per_iter: [0.9200000000000002, 0.8600000000000001, 0.9600000000000002, 0.9400000000000001, 0.9200000000000002, 0.78, 0.96, 0.8800000000000001, 0.86, 0.8600000000000001]
+clean_hit_rate: 0.02
+mean_first_adv_rank: 1.1
+adv_other_in_topk_total: 0
+Outputs: experiments/runs/E6-msmarco-contriever-full-attack-100targets/{trace.jsonl,summary.json,run.txt}

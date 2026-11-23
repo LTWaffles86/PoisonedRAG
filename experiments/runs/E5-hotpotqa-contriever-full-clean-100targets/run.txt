@@ -1,0 +1,124 @@
+Args: {'dataset': 'hotpotqa', 'split': 'test', 'retriever': 'contriever', 'score_function': 'dot', 'top_k': 5, 'adv_per_query': 5, 'M': 10, 'repeat_times': 10, 'seed': 12, 'attack': 'none', 'corpus_size': 'full', 'batch_size': 64, 'run_name': 'E5-hotpotqa-contriever-full-clean-100targets'}
+Knowledge base: 5233329 clean documents (full)
+######## Iter 1/10: targets 0-9 ########
+  5adbf0a255429947ff17385a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a8cb288554299585d9e3726: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5ab56e32554299637185c594: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ab29c24554299449642c932: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a8133725542995ce29dcbdb: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae6050f55429929b0807a5e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae2070a5542994d89d5b313: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5ae22b8d554299234fd0440f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a722b8655429971e9dc9329: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5adf37a95542995ec70e8f97: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+######## Iter 2/10: targets 10-19 ########
+  5abd259d55429924427fcf1a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae4a3265542995ad6573de5: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae0361155429925eb1afc2c: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5abc0a5d5542993f40c73c64: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7cc50e554299452d57ba3e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 5
+  5abf63f15542997ec76fd3ea: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 11
+  5a80721b554299485f5985ef: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ab51dae5542991779162d82: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7a0e1e5542990783324e1a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a8e068b5542995085b37384: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 28
+######## Iter 3/10: targets 20-29 ########
+  5a77724455429972597f153e: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5a7320565542991f9a20c61d: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7be2595542997c3ec972ac: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5a8f4c8d554299458435d5a3: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a80840f554299485f59863b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 3
+  5ae7ba7a5542993210983f12: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5aba7cfe554299232ef4a2fd: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae5aba0554299546bf82f17: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 4
+  5ae7e1fc55429952e35ea9cc: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae37c765542992f92d822d4: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+######## Iter 4/10: targets 30-39 ########
+  5ae33c4d5542992f92d82262: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a77cb335542997042120b3a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a78bd9b554299078472774a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7625e8554299109176e66a: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae2dd2055429928c423950d: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5abdf12255429976d4830a2f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5aba5d2e55429901930fa799: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7759fc5542993569682d60: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5aba749055429901930fa7d8: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae53b545542990ba0bbb23c: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+######## Iter 5/10: targets 40-49 ########
+  5ae224da554299234fd043ee: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae2b770554299495565db0f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a80b3a9554299485f5986cc: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5adccd795542990d50227d2c: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a84c4135542994c784dda31: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5abc8d75554299700f9d7900: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a83880e554299123d8c214e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a879adb5542996e4f30887f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5add11935542994734353827: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 8
+  5a8c5569554299240d9c2126: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+######## Iter 6/10: targets 50-59 ########
+  5a8d5fc6554299585d9e37c6: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5abd01205542992ac4f3819b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab69c25554299110f219a39: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ae0006755429925eb1afbd3: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a8574945542997b5ce3fffb: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a87d8215542994775f60800: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 12
+  5ac2ffbd554299677310267b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7c960655429935c91b5244: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 13
+  5ac2d1d755429921a00ab053: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ac298f9554299657fa28fc9: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 19
+######## Iter 7/10: targets 60-69 ########
+  5a738d27554299623ed4abf3: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab5ed505542997d4ad1f255: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a88d745554299206df2b378: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 10
+  5ae748d1554299572ea547b0: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7a8a9c554299042af8f666: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab642845542995eadeeff8e: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a7633ad5542992db9473741: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 19
+  5a713a5a5542994082a3e6a9: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab9374b554299131ca422c6: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5a76e88555429972597f13f4: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+######## Iter 8/10: targets 70-79 ########
+  5a7ddc5a5542995f4f4022da: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7a1cd85542990783324e65: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae0a59a55429945ae9593e2: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5a8739a05542994775f607ab: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 22
+  5ae2dfd155429928c423951b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab6ba245542995eadef007f: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a88dcf9554299206df2b383: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ac0d83a554299294b219038: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a790d8f554299029c4b5eec: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 3
+  5ab2c5e255429916697740ba: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+######## Iter 9/10: targets 80-89 ########
+  5ab271fe554299449642c8a6: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5add673e5542992ae4cec54d: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5ae819ac55429952e35eaa16: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5adf65555542992d7e9f9334: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5adef80b5542993a75d263c4: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ac3e0f7554299194317388b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ac02e31554299294b218f3f: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 14
+  5ab7e4dc5542995dae37e9df: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 13
+  5ab41d855542996a3a969f4b: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5a7b7ff75542995eb53be93d: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 18
+######## Iter 10/10: targets 90-99 ########
+  5a7d19d85542995ed0d165e8: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = None
+  5abd2eab5542992ac4f38210: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5adc65e85542996e68525350: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ac2bbd0554299218029db09: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5adf3e355542993a75d26440: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 3
+  5ac289ff5542996366519a02: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab9b29c554299743d22ebae: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 2
+  5ae4f2c75542993aec5ec0fb: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+  5ab1d7ac554299449642c7e6: own adv in top-5 = 0, other adv = 0, gt in top-k = False, gt clean rank = 12
+  5ac2659b55429963665199a1: own adv in top-5 = 0, other adv = 0, gt in top-k = True, gt clean rank = 1
+
+======== Summary ========
+n_targets: 100
+poison_retrieval_hit_rate: 0.0
+precision: 0.0
+recall: 0.0
+f1: 0.0
+f1_per_iter: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+clean_hit_rate: 0.78
+mean_first_adv_rank: None
+adv_other_in_topk_total: 0
+Outputs: experiments/runs/E5-hotpotqa-contriever-full-clean-100targets/{trace.jsonl,summary.json,run.txt}

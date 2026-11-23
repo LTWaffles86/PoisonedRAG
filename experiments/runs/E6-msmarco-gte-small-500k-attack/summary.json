@@ -1,0 +1,43 @@
+{
+  "run_name": "E6-msmarco-gte-small-500k-attack",
+  "args": {
+    "dataset": "msmarco",
+    "split": "train",
+    "retriever": "gte-small",
+    "score_function": "cos_sim",
+    "top_k": 5,
+    "adv_per_query": 5,
+    "M": 10,
+    "repeat_times": 3,
+    "seed": 12,
+    "attack": "LM_targeted",
+    "corpus_size": "500000",
+    "batch_size": 64,
+    "run_name": "E6-msmarco-gte-small-500k-attack"
+  },
+  "metrics": {
+    "n_targets": 30,
+    "poison_retrieval_hit_rate": 1.0,
+    "precision": 0.8933333333333333,
+    "recall": 0.8933333333333333,
+    "f1": 0.8933333333333334,
+    "f1_per_iter": [
+      0.8400000000000001,
+      0.9,
+      0.9400000000000001
+    ],
+    "clean_hit_rate": 0.36666666666666664,
+    "mean_first_adv_rank": 1.2333333333333334,
+    "adv_other_in_topk_total": 0
+  },
+  "knowledge_base_size": 500000,
+  "wall_time_s": 1315.0,
+  "timestamp": "2026-11-23 06:02:14",
+  "git_commit": "5733475-dirty",
+  "env": {
+    "python": "3.11.18",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "gpu": "NVIDIA GeForce GTX 1660"
+  }
+}

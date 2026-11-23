@@ -31,9 +31,9 @@
     "adv_other_in_topk_total": 0
   },
   "knowledge_base_size": 100000,
-  "wall_time_s": 8.9,
-  "timestamp": "2026-11-05 22:00:45",
-  "git_commit": "f660d72-dirty",
+  "wall_time_s": 9.2,
+  "timestamp": "2026-11-22 18:35:05",
+  "git_commit": "5733475-dirty",
   "env": {
     "python": "3.11.18",
     "torch": "2.14.1+cu126",
